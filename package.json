@@ -15,6 +15,18 @@
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "[*.ts, *.tsx]": [
+      "eslint --fix",
+      "cross-env CI=true yarn test --bail --findRelatedTest",
+      "git add"
+    ]
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
