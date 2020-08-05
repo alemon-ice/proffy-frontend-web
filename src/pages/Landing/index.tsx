@@ -13,7 +13,7 @@ const Landing: React.FC = () => (
   <div id="page-landing">
     <div id="page-landing-content" className="container">
       <div className="logo-container">
-        <img src={logoImg} alt="Proffy" />
+        <img src={logoImg} alt="Logo Proffy" />
         <h2>Sua plataforma de estudos online.</h2>
       </div>
       <img
