@@ -1,7 +1,6 @@
 import React from 'react';
 
-import PageHeader from 'Organisms/PageHeader';
-import TeacherItem from 'Organisms/TeacherItem';
+import { PageHeader, TeacherItem } from 'components/organisms';
 
 import './styles.css';
 
