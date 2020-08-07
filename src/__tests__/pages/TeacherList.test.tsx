@@ -1,5 +1,5 @@
 import React from 'react';
-import { Landing } from 'components/pages';
+import { TeacherList } from 'components/pages';
 
 import { render } from '@testing-library/react';
 
@@ -11,7 +11,7 @@ jest.mock('react-router-dom', () => {
 
 describe('Landing Page', () => {
   it('Load the page correctly', () => {
-    const { debug } = render(<Landing />);
+    const { debug } = render(<TeacherList />);
 
     debug();
   });
